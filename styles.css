@@ -1,0 +1,292 @@
+@font-face {
+  font-family: 'Dr Sugiyama';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Dr Sugiyama Regular'), local('DrSugiyama-Regular'), url(https://fonts.gstatic.com/s/drsugiyama/v8/HTxoL2k4N3O9n5I1boGI7ZbWOY4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Work Sans ExtraBold'), local('WorkSans-ExtraBold'), url(https://fonts.gstatic.com/s/worksans/v3/QGYpz_wNahGAdqQ43Rh324b8mNhN.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Condensed'), local('RobotoCondensed-Regular'), url(https://fonts.gstatic.com/s/robotocondensed/v16/ieVl2ZhZI2eCN5jzbjEETS9weq8-19K7DQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+html {
+font-size: calc(0.6em + 1vw);
+line-height: 130%;
+margin: 0;
+padding: 0px;
+color: white;
+scroll-behavior: smooth;
+background-color: #0B0B0B;
+font-family: 'Roboto Condensed';
+font-weight: 400;
+}
+
+p {
+  text-align: right;
+  font-size: 0.7em;
+  line-height: 120%;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  z-index: 0;
+}
+
+blockquote {
+ font-family: 'Work Sans';
+ font-style: normal;
+ font-weight: 800;
+ color: white;
+ letter-spacing: 0.1em;
+ line-height: 120%;
+ padding: 1em;
+ background-color: #0B0B0B;
+ font-size: 0.8em;
+}
+
+strong {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  font-size: 1.2em;
+  line-height: 150%;
+}
+
+a {
+  font-size: 0.6em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  float: right;
+  text-align: center;
+  width: 6em;
+  border: 0.2em solid white;
+  margin-top: 2em;
+  width: 15em;
+}
+
+#img-div {
+  width: 48%;
+  position: relative;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin: 0;
+  padding: 0px;
+}
+
+.title-right {
+  right: 0.5em;
+  position: fixed;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform:rotate(180deg);
+      -ms-transform:rotate(180deg);
+          transform:rotate(180deg);
+  font-size: 3.8em;
+  color: white;
+  background-color: #0B0B0B;
+  z-index: 1;
+  margin-top: 2%;
+  font-weight: 800;
+}
+
+.dali {
+  font-family: 'Dr Sugiyama';
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 0.3em;
+  color: white;
+}
+
+.quote {
+  text-align: right;
+  top: 55%;
+  position: absolute;
+  z-index: 2;
+  left: 5vw;
+  border-right: 0.8em solid white;
+}
+
+.name {
+  font-family: 'Dr Sugiyama';
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  line-height: 100%;
+  font-size: 2em;
+}
+
+.info {
+  width: 40%;
+  padding: 1em;
+}
+
+.section-1 {
+  padding: 2em;
+}
+
+.timeline-grid {
+  color: black;
+  width: 85%;
+  margin: -2em 1em 1em 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2em 1fr 2em 1fr 2em 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px;
+  grid-gap: 2em;
+  grid-auto-flow: dense;
+  z-index: 3;
+}
+
+.timeline-grid article:nth-child(4n+2) {
+  -ms-grid-column-span: 2;
+  grid-column-end: span 2;
+  -ms-grid-row-span: 2;
+  grid-row-end: span 2;
+  background-color: white;
+  z-index: 3;
+  border-radius: 0.5em;
+}
+
+.timeline-grid article:nth-child(4n) {
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row-span: 3;
+  grid-row-end: span 3;
+  background-color: white;
+  z-index: 3;
+  border-radius: 0.5em;
+}
+
+ .timeline-grid article:nth-child(odd) {
+   -ms-grid-column-span: 1;
+   grid-column: span 1;
+   -ms-grid-row-span: 2;
+   grid-row: span 2;
+   background-color: white;
+   z-index: 3;
+   border-radius: 0.5em;
+ }
+
+.timeline-number {
+  text-align: center;
+  font-family: 'Dr Sugiyama';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3em;
+  margin: 0;
+}
+
+.timeline-text {
+  text-align: left;
+  padding: 0 1em 1em 1em;
+}
+
+@media only screen and (max-width: 991px) {
+  a {
+    font-size: 0.8em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    float: left;
+  }
+
+  #img-div {
+    width:80%;
+  }
+  .info {
+    width:80%;
+  }
+
+  p {
+    text-align: left;
+    font-size: 1em;
+    line-height: 135%;
+  }
+  .section-1 {
+    padding-left: 0px;
+  }
+  blockquote {
+    line-height: 135%;
+  }
+
+  .timeline-grid {
+      width: 80%;
+      margin: 2em 1em 1em 1em;
+      -ms-grid-columns: 1fr 2em 1fr 2em 1fr;
+      grid-template-columns: repeat(3, 1fr);
+  }
+
+  .timeline-grid article:nth-child(odd) {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    -ms-grid-row-span: 3;
+    grid-row: span 3;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  a {
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .timeline-grid {
+      width: 76%;
+      margin: 2em 0.2em 0.2em 0.2em;
+      -ms-grid-columns: 1fr 2em 1fr;
+      grid-template-columns: repeat(2, 1fr);
+}
+
+  .timeline-grid article:nth-child(2) {
+    -ms-grid-column-span: 1;
+    grid-column: span 1;
+    -ms-grid-row-span: 3;
+    grid-row: span 3;
+  }
+
+  .timeline-grid article:nth-child(3) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+  }
+  .timeline-grid article:nth-child(9) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+  }
+}
